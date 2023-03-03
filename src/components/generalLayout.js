@@ -1,9 +1,15 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const GeneralLayout = () => {
   return ( 
     <>
-      head
+      <header>
+        <div></div>
+        <nav>
+          <NavLink to={'/'}>Home</NavLink>
+          <NavLink to={'/challenges'}>Challenges</NavLink>
+        </nav>
+      </header>
       <Outlet />
     </>
   );

@@ -5,7 +5,7 @@ const CssParallax = () => {
     <>
       <section className={style.wrapper}>
         <div>
-          <img className={style.back} src="https://cdn.neowin.com/news/images/uploaded/2022/09/1662982847_1662982214_windows_11_black.jpg" />
+          <img alt="back" className={style.back} src="https://cdn.neowin.com/news/images/uploaded/2022/09/1662982847_1662982214_windows_11_black.jpg" />
           <h1>Welcome to css parallax effect</h1>
         </div>
         <div>
@@ -16,7 +16,7 @@ const CssParallax = () => {
           </p>
         </div>
         <div>
-          <img className={style.back} src="https://i.pinimg.com/originals/d9/82/85/d982858c8661482513aac2c54650ef73.jpg" />
+          <img alt="back" className={style.back} src="https://i.pinimg.com/originals/d9/82/85/d982858c8661482513aac2c54650ef73.jpg" />
           <p>
             Lorem ipsum dolor sit amet. Vel quia voluptatem quo nemo maxime in nisi sapiente et similique illum est laudantium odio. Qui omnis aspernatur a doloremque inventore sed distinctio tempora aut quia nulla eum accusamus alias nam corporis dolorem eos impedit earum. Aut repudiandae aliquid id saepe odio non quibusdam quae qui omnis aperiam sit expedita facilis. Vel deleniti quod quo quia adipisci non quos quos non quia dolores At temporibus iure non magni dolorum non accusantium iure.
 
@@ -31,7 +31,7 @@ const CssParallax = () => {
           </p>
         </div>
         <div>
-          <img className={style.back} src="https://cutewallpaper.org/23/android-tablet-dark-theme-wallpaper/3270421567.jpg" />
+          <img alt="back" className={style.back} src="https://cutewallpaper.org/23/android-tablet-dark-theme-wallpaper/3270421567.jpg" />
           <p>
             Lorem ipsum dolor sit amet. Vel quia voluptatem quo nemo maxime in nisi sapiente et similique illum est laudantium odio. Qui omnis aspernatur a doloremque inventore sed distinctio tempora aut quia nulla eum accusamus alias nam corporis dolorem eos impedit earum. Aut repudiandae aliquid id saepe odio non quibusdam quae qui omnis aperiam sit expedita facilis. Vel deleniti quod quo quia adipisci non quos quos non quia dolores At temporibus iure non magni dolorum non accusantium iure.
 
