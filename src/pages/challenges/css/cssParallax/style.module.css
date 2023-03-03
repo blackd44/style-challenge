@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+.wrapper {
+  contain: content;
+  position: relative;
+  background-color: #111;
+  color: #ddd;
+  perspective: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  font-size: 1.2em;
+}
