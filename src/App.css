@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Saira");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main: #ddd;
+  --color-back: #111;
+  --color-active: #f80;
+  --spacer: 5rem
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--color-back);
+  color: var(--color-main);
+  font-family: Saira;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  color: var(--color-main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: var(--spacer);
+}
+
+header nav a {
+  display: inline-block;
+  padding: 1rem 0 1rem var(--spacer);
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: var(--color-main);
+  text-shadow:
+    -1px -1px 0 var(--color-back),
+    1px -1px 0 var(--color-back),
+    -1px 1px 0 var(--color-back),
+    1px 1px 0 var(--color-back);
+}
+
+header nav a:hover {
+  font-weight: bold;
+}
+
+header nav a.active {
+  color: var(--color-active);
+}
+
+
+.list-section {
+  min-height: 100vh;
+  padding-block: 5rem;
+  padding-inline: var(--spacer);
+}
+
+.list-section > :is(h1, h2, h3, h4, h5, h6) {
+  border-bottom: 1px solid;
+}
+
+.list-section :is(h1, h2, h3, h4, h5, h6) {
+  padding-block: .5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.detail-list li details {
+  background-color: #fff2;
+  border-radius: 5px;
+}
+
+.detail-list li details > summary {
+  list-style-type: none;
+  padding: .5rem calc(var(--spacer) / 2);
+}
+
+.detail-list li details > summary::before {
+  content: '>';
+  display: inline-block;
+  transition: .2s;
+  translate: calc(-1 * (var(--spacer) / 4));
+}
+
+.detail-list li details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.detail-list li details > summary::after {
+  content: "(click for more)";
+  margin-left: .5rem;
+  font-size: 80%;
+}
+
+.detail-list li details > :not(summary) {
+  display: inline-block;
+  padding: 0 calc(var(--spacer) / 2 + .5rem) .5rem;
+}
+
+.detail-list li details a {
+  color: var(--color-active);
+}
